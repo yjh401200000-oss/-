@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "updatedAt": "2026-11-15T08:12:00+09:00",
-  "source": "꼬물 자동 점검 · 네이버 메일 34건 + 공개 이벤트 페이지 6곳",
+  "updatedAt": "2026-11-15T13:25:00+09:00",
+  "source": "꼬물 자동 점검 · 네이버 메일 34건 + 공개 이벤트 페이지 6곳 · 11/15 딥링크 재검증",
   "note": "endsInDays는 이 파일을 읽은 날 기준 남은 일수입니다. 실제 운영에서는 꼬물이 절대 마감일(deadline)을 채워 넣습니다.",
   "events": [
     {
@@ -14,9 +14,9 @@
       "benefit": "30P",
       "summary": "5,000보를 채우면 30P가 바로 들어와요. 매일 자정에 걸음 수가 리셋돼요.",
       "meta": "매일 · 앱에서 걸음 수 확인",
-      "deeplink": "supertoss://",
-      "web": "https://toss.im",
-      "hint": "토스 홈 아래쪽 '만보기'"
+      "deeplink": "https://toss.im/_m/zahEn9jc",
+      "web": "https://toss.im/_m/zahEn9jc",
+      "hint": "토스 앱 만보기 화면으로 바로 열려요"
     },
     {
       "id": "toss-quiz",
@@ -28,9 +28,9 @@
       "benefit": "최대 100P",
       "summary": "오늘 22:00 마감. 정답 1개를 맞히면 포인트가 들어와요.",
       "meta": "오늘 22:00 마감 · 20초",
-      "deeplink": "supertoss://",
-      "web": "https://toss.im",
-      "hint": "토스 홈 '행운퀴즈' 배너"
+      "deeplink": "supertoss://toss/benefit",
+      "web": "https://toss.im/benefit",
+      "hint": "토스 앱 혜택 화면으로 바로 열려요"
     },
     {
       "id": "naver-click",
@@ -40,25 +40,53 @@
       "status": "manual",
       "endsInDays": 0,
       "benefit": "최대 30P",
-      "summary": "네이버페이 홈 배너를 하루 3번까지 눌러 적립할 수 있어요.",
+      "summary": "즉시적립 화면이 바로 열려요. 배너를 누르면 포인트가 바로 들어옵니다.",
       "meta": "하루 3회 · 10초",
-      "deeplink": "naversearchapp://",
-      "web": "https://m.pay.naver.com",
-      "hint": "네이버페이 홈 상단 배너"
+      "deeplink": "naversearchapp://inappbrowser?url=https%3A%2F%2Fpoint.pay.naver.com%2Fmain%3Fcategory%3Dquickreward&target=new&version=6",
+      "web": "https://point.pay.naver.com/main?category=quickreward",
+      "hint": "네이버앱 인앱브라우저로 즉시적립 화면이 열려요"
+    },
+    {
+      "id": "naver-pay-home",
+      "title": "네이버페이 결제홈 방문 적립",
+      "sourceId": "naver",
+      "sourceLabel": "네이버",
+      "status": "manual",
+      "endsInDays": 0,
+      "benefit": "10~15원",
+      "summary": "결제홈에 들어가기만 해도 10~15원이 쌓여요. 하루 한 번, 5초면 끝나요.",
+      "meta": "매일 · 방문만 해도 적립",
+      "deeplink": "naversearchapp://inappbrowser?url=https%3A%2F%2Fnew-m.pay.naver.com%2Fhistorybenefit%2Fhome&target=new&version=6",
+      "web": "https://new-m.pay.naver.com/historybenefit/home",
+      "hint": "네이버앱 인앱브라우저로 네이버페이 결제홈이 열려요"
+    },
+    {
+      "id": "naver-click-today",
+      "title": "네이버페이 오늘의 클릭 적립",
+      "sourceId": "naver",
+      "sourceLabel": "네이버",
+      "status": "manual",
+      "endsInDays": 0,
+      "benefit": "5원 즉시적립",
+      "summary": "오늘 열린 클릭 적립이에요. 배너를 한 번 누르면 5원이 바로 들어와요.",
+      "meta": "오늘 하루 · 클릭 1번",
+      "deeplink": "naversearchapp://inappbrowser?url=https%3A%2F%2Fcampaign2.naver.com%2Fnpay%2Fv2%2Fclick-point%2F%3FeventId%3Dcr_2026110104_2611_1115&target=new&version=6",
+      "web": "https://campaign2.naver.com/npay/v2/click-point/?eventId=cr_2026110104_2611_1115",
+      "hint": "네이버앱 인앱브라우저로 오늘의 클릭 적립이 열려요"
     },
     {
       "id": "coupang-weekend",
-      "title": "쿠팡 위켄드 특가 3,000원 쿠폰",
+      "title": "쿠팡 골드박스 오늘의 특가",
       "sourceId": "coupang",
       "sourceLabel": "쿠팡",
       "status": "manual",
       "endsInDays": 1,
-      "benefit": "3,000원 할인",
-      "summary": "일요일 24:00까지 쿠폰을 받아 두면 위켄드 특가 상품에 바로 쓸 수 있어요.",
-      "meta": "내일 마감 · 쿠폰 받기 1탭",
-      "deeplink": "coupang://",
-      "web": "https://m.coupang.com",
-      "hint": "쿠팡 앱 상단 '위켄드 특가' 배너"
+      "benefit": "오늘의 특가",
+      "summary": "골드박스는 매일 새로 열리는 쿠팡 특가 코너예요. 오늘 올라온 상품과 쿠폰을 바로 볼 수 있어요.",
+      "meta": "매일 갱신 · 10초",
+      "deeplink": "https://www.coupang.com/np/goldbox",
+      "web": "https://www.coupang.com/np/goldbox",
+      "hint": "쿠팡 앱 골드박스로 바로 열려요"
     },
     {
       "id": "kakaopay-attend",
@@ -70,9 +98,9 @@
       "benefit": "7일 연속 500P",
       "summary": "하루 1번 출석 도장. 7일을 채우면 500P가 한 번에 들어와요.",
       "meta": "5초 · 연속 4일째",
-      "deeplink": "kakaopay://",
-      "web": "https://m.kakaopay.com",
-      "hint": "카카오페이 홈 '출석체크'"
+      "deeplink": "https://link.kakaopay.com/_/plUyuPn",
+      "web": "https://link.kakaopay.com/_/plUyuPn",
+      "hint": "카카오페이 앱 출석체크 화면으로 바로 열려요"
     },
     {
       "id": "hyundai-cashback",
@@ -114,9 +142,9 @@
       "benefit": "1,240P 보존",
       "summary": "12/31에 1,240P가 소멸돼요. 이번 달 안에 한 번 쓰면 그대로 남아요.",
       "meta": "12/31 소멸 · 알림 신청됨",
-      "deeplink": "naversearchapp://",
-      "web": "https://m.pay.naver.com",
-      "hint": "네이버페이 → 포인트",
+      "deeplink": "naversearchapp://inappbrowser?url=https%3A%2F%2Fpoint.pay.naver.com%2Fmain&target=new&version=6",
+      "web": "https://point.pay.naver.com/main",
+      "hint": "네이버앱 인앱브라우저로 네이버페이 메인이 열려요",
       "autoNote": "11/14 09:03 메일에서 12/31 소멸 예정 1,240P를 확인했어요. D-30과 D-7에 다시 알려드릴게요."
     },
     {
