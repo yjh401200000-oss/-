@@ -320,7 +320,7 @@
       <div class="hero-top">
         <div>
           <p class="hero-label"><svg><use href="#i-check"/></svg> 오늘 루틴</p>
-          <p class="hero-count"><span id="heroDone">0</span><em id="heroTotal">/5</em></p>
+          <p class="hero-count"><span id="heroDone">0</span><em id="heroTotal">/4</em></p>
           <p class="hero-sub" id="heroSub">직접 눌러야 하는 것만 모았어요</p>
         </div>
         <svg class="ring" viewBox="0 0 44 44" aria-hidden="true">
@@ -391,7 +391,7 @@
         <h3>새 이벤트도 찾아볼까요?</h3>
         <p>요즘 쓰는 앱이나 받고 싶은 혜택을 적어두면, 다음 메일 점검 때 같이 찾아볼게요.</p>
         <div class="ask-form">
-          <input id="askInput" type="text" maxlength="40" placeholder="예: 업비트, 컬리, 현대카드" autocomplete="off" aria-label="찾고 싶은 앱이나 이벤트">
+          <input id="askInput" type="text" maxlength="40" placeholder="예: 코스트코, 컬리, 무신사" autocomplete="off" aria-label="찾고 싶은 앱이나 이벤트">
           <button class="btn-p" data-action="ask">요청</button>
         </div>
         <ul class="asks" id="askList"></ul>
@@ -431,10 +431,10 @@
       <h2 class="sheet-title">내 루틴 추가</h2>
       <p class="sheet-desc">자주 여는 앱이나 이벤트 링크를 담아두면 다음부터 한 번에 열 수 있어요.</p>
       <label class="flabel" for="fTitle">이름</label>
-      <input class="field" id="fTitle" name="title" type="text" maxlength="30" placeholder="예: 업비트 출석체크" autocomplete="off">
+      <input class="field" id="fTitle" name="title" type="text" maxlength="30" placeholder="예: 컬리 출석체크" autocomplete="off">
       <label class="flabel" for="fLink">앱 링크 또는 웹 주소 (선택)</label>
-      <input class="field" id="fLink" name="link" type="text" placeholder="예: supertoss:// 또는 https://…" autocomplete="off" inputmode="url">
-      <p class="fhint">앱 링크(supertoss:// 처럼)를 넣으면 열기 버튼이 앱으로 바로 넘어가요. 모르면 비워두셔도 돼요.</p>
+      <input class="field" id="fLink" name="link" type="text" placeholder="예: myapp:// 또는 https://…" autocomplete="off" inputmode="url">
+      <p class="fhint">앱 링크(myapp:// 처럼)를 넣으면 열기 버튼이 앱으로 바로 넘어가요. 모르면 비워두셔도 돼요.</p>
       <label class="flabel" for="fMemo">메모 (선택)</label>
       <input class="field" id="fMemo" name="memo" type="text" maxlength="40" placeholder="예: 15초 · 30P" autocomplete="off">
       <p class="ferr" id="fErr" hidden>이름을 먼저 적어 주세요.</p>
@@ -446,7 +446,7 @@
   </div>
 </div>
 
-<script id="seed-events" type="application/json">{"version":2,"updatedAt":"2026-11-15T13:25:00+09:00","source":"꼬물 자동 점검 · 네이버 메일 34건 + 공개 이벤트 페이지 6곳 · 11/15 딥링크 재검증","note":"endsInDays는 이 파일을 읽은 날 기준 남은 일수입니다. 실제 운영에서는 꼬물이 절대 마감일(deadline)을 채워 넣습니다.","events":[{"id":"toss-walk","title":"토스 만보기 5,000보","sourceId":"toss","sourceLabel":"토스","status":"manual","endsInDays":0,"benefit":"30P","summary":"5,000보를 채우면 30P가 바로 들어와요. 매일 자정에 걸음 수가 리셋돼요.","meta":"매일 · 앱에서 걸음 수 확인","deeplink":"https://toss.im/_m/zahEn9jc","web":"https://toss.im/_m/zahEn9jc","hint":"토스 앱 만보기 화면으로 바로 열려요"},{"id":"toss-quiz","title":"토스 행운퀴즈","sourceId":"toss","sourceLabel":"토스","status":"manual","endsInDays":0,"benefit":"최대 100P","summary":"오늘 22:00 마감. 정답 1개를 맞히면 포인트가 들어와요.","meta":"오늘 22:00 마감 · 20초","deeplink":"supertoss://toss/benefit","web":"https://toss.im/benefit","hint":"토스 앱 혜택 화면으로 바로 열려요"},{"id":"naver-click","title":"네이버페이 클릭 적립","sourceId":"naver","sourceLabel":"네이버","status":"manual","endsInDays":0,"benefit":"최대 30P","summary":"즉시적립 화면이 바로 열려요. 배너를 누르면 포인트가 바로 들어옵니다.","meta":"하루 3회 · 10초","deeplink":"naversearchapp://inappbrowser?url=https%3A%2F%2Fpoint.pay.naver.com%2Fmain%3Fcategory%3Dquickreward&target=new&version=6","web":"https://point.pay.naver.com/main?category=quickreward","hint":"네이버앱 인앱브라우저로 즉시적립 화면이 열려요"},{"id":"naver-pay-home","title":"네이버페이 결제홈 방문 적립","sourceId":"naver","sourceLabel":"네이버","status":"manual","endsInDays":0,"benefit":"10~15원","summary":"결제홈에 들어가기만 해도 10~15원이 쌓여요. 하루 한 번, 5초면 끝나요.","meta":"매일 · 방문만 해도 적립","deeplink":"naversearchapp://inappbrowser?url=https%3A%2F%2Fnew-m.pay.naver.com%2Fhistorybenefit%2Fhome&target=new&version=6","web":"https://new-m.pay.naver.com/historybenefit/home","hint":"네이버앱 인앱브라우저로 네이버페이 결제홈이 열려요"},{"id":"naver-click-today","title":"네이버페이 오늘의 클릭 적립","sourceId":"naver","sourceLabel":"네이버","status":"manual","endsInDays":0,"benefit":"5원 즉시적립","summary":"오늘 열린 클릭 적립이에요. 배너를 한 번 누르면 5원이 바로 들어와요.","meta":"오늘 하루 · 클릭 1번","deeplink":"naversearchapp://inappbrowser?url=https%3A%2F%2Fcampaign2.naver.com%2Fnpay%2Fv2%2Fclick-point%2F%3FeventId%3Dcr_2026110104_2611_1115&target=new&version=6","web":"https://campaign2.naver.com/npay/v2/click-point/?eventId=cr_2026110104_2611_1115","hint":"네이버앱 인앱브라우저로 오늘의 클릭 적립이 열려요"},{"id":"coupang-weekend","title":"쿠팡 골드박스 오늘의 특가","sourceId":"coupang","sourceLabel":"쿠팡","status":"manual","endsInDays":1,"benefit":"오늘의 특가","summary":"골드박스는 매일 새로 열리는 쿠팡 특가 코너예요. 오늘 올라온 상품과 쿠폰을 바로 볼 수 있어요.","meta":"매일 갱신 · 10초","deeplink":"https://www.coupang.com/np/goldbox","web":"https://www.coupang.com/np/goldbox","hint":"쿠팡 앱 골드박스로 바로 열려요"},{"id":"kakaopay-attend","title":"카카오페이 출석체크","sourceId":"kakaopay","sourceLabel":"카카오페이","status":"manual","endsInDays":3,"benefit":"7일 연속 500P","summary":"하루 1번 출석 도장. 7일을 채우면 500P가 한 번에 들어와요.","meta":"5초 · 연속 4일째","deeplink":"https://link.kakaopay.com/_/plUyuPn","web":"https://link.kakaopay.com/_/plUyuPn","hint":"카카오페이 앱 출석체크 화면으로 바로 열려요"},{"id":"hyundai-cashback","title":"현대카드 11월 온라인 결제 캐시백","sourceId":"card","sourceLabel":"카드사","status":"checked","endsInDays":5,"benefit":"최대 2만원","summary":"온라인 결제 5% 캐시백. 응모를 눌러야 대상에 들어가요.","meta":"응모 필요 · 11/20 마감","deeplink":"","web":"https://www.hyundaicard.com","hint":"현대카드 앱 이벤트 → 응모","autoNote":"11/15 08:12 현대카드 메일에서 응모가 필요한 이벤트로 확인했어요. 응모 버튼은 직접 눌러 주셔야 해요."},{"id":"shinhan-cvs","title":"신한카드 편의점 5% 캐시백","sourceId":"card","sourceLabel":"카드사","status":"entered","endsInDays":12,"benefit":"월 최대 1만원","summary":"편의점 결제 5% 캐시백. 응모는 끝났고 결제만 하면 적용돼요.","meta":"응모 완료 · 12/5까지","deeplink":"","web":"https://www.shinhancard.com","hint":"신한카드 앱 이벤트","autoNote":"11/15 08:12 메일의 응모 링크로 대신 응모를 마쳤어요. (개인정보 입력이 없는 공개 폼)"},{"id":"naver-mileage","title":"네이버페이 1,240P 소멸 예정","sourceId":"naver","sourceLabel":"네이버","status":"checked","endsInDays":46,"benefit":"1,240P 보존","summary":"12/31에 1,240P가 소멸돼요. 이번 달 안에 한 번 쓰면 그대로 남아요.","meta":"12/31 소멸 · 알림 신청됨","deeplink":"naversearchapp://inappbrowser?url=https%3A%2F%2Fpoint.pay.naver.com%2Fmain&target=new&version=6","web":"https://point.pay.naver.com/main","hint":"네이버앱 인앱브라우저로 네이버페이 메인이 열려요","autoNote":"11/14 09:03 메일에서 12/31 소멸 예정 1,240P를 확인했어요. D-30과 D-7에 다시 알려드릴게요."},{"id":"upbit-staking","title":"업비트 스테이킹 보상 이벤트","sourceId":"upbit","sourceLabel":"업비트","status":"manual","endsInDays":4,"benefit":"연 3~5% 보상","summary":"보유 중인 코인을 스테이킹으로 옮기면 기간 동안 보상이 붙어요.","meta":"신청 1분 · 11/19 마감","deeplink":"","web":"https://upbit.com","hint":"업비트 앱 '스테이킹' 메뉴"},{"id":"ssg-firstpay","title":"SSG 11월 첫 결제 5,000원 할인","sourceId":"ssg","sourceLabel":"SSG","status":"manual","endsInDays":8,"benefit":"5,000원 할인","summary":"이번 달 SSG 첫 결제에 5,000원 할인 쿠폰이 붙어요. 3만원 이상 결제 시.","meta":"쿠폰 받기 1탭","deeplink":"","web":"https://m.ssg.com","hint":"SSG 앱 쿠폰함"},{"id":"gmarket-bigsmile","title":"지마켓 빅스마일데이 10% 쿠폰","sourceId":"gmarket","sourceLabel":"지마켓","status":"checked","endsInDays":6,"benefit":"10% 쿠폰","summary":"행사 기간 중 한 번 쓸 수 있는 10% 쿠폰이에요. 최대 5,000원까지.","meta":"쿠폰 받기 1탭 · 11/21까지","deeplink":"","web":"https://m.gmarket.co.kr","hint":"지마켓 앱 '빅스마일데이'","autoNote":"11/15 08:12 지마켓 발송 메일에서 행사 기간과 쿠폰 조건을 확인했어요."},{"id":"baemin-coupon","title":"배달의민족 첫 주문 3,000원 쿠폰","sourceId":"baemin","sourceLabel":"배민","status":"entered","endsInDays":9,"benefit":"3,000원 할인","summary":"이번 주 안에 쓰면 되는 배달 쿠폰이에요. 계정 쿠폰함에 담아뒀어요.","meta":"쿠폰 보유 · 11/24까지","deeplink":"baemin://","web":"https://www.baemin.com","hint":"배민 앱 '쿠폰함'","autoNote":"11/13 19:40 배민에서 온 쿠폰 알림을 열어 계정에 담아뒀어요."}]}</script>
+<script id="seed-events" type="application/json">{"version":3,"updatedAt":"2026-11-15T13:53:05+09:00","source":"꼬물이 화면에 직접 열어 확인한 5개 · 시연용 예시 데이터는 11/15에 모두 삭제","note":"daily:true 는 매일 반복되는 항목이라 마감일이 없다는 뜻입니다. 실제 마감이 확인된 항목만 deadline(YYYY-MM-DD)을 채웁니다. logs 는 꼬물이 실제로 처리한 일이 있을 때만 쌓입니다.","logs":[],"events":[{"id":"naver-pay-home","title":"네이버페이 결제홈 방문 적립","sourceId":"naver","sourceLabel":"네이버","status":"manual","daily":true,"benefit":"방문 적립","summary":"네이버페이 결제홈에 들어가기만 해도 적립 혜택을 받을 수 있어요. 하루 한 번이면 돼요.","meta":"매일 · 방문만 해도 적립","deeplink":"naversearchapp://inappbrowser?url=https%3A%2F%2Fnew-m.pay.naver.com%2Fhistorybenefit%2Fhome&target=new&version=6","web":"https://new-m.pay.naver.com/historybenefit/home","hint":"네이버앱 인앱브라우저로 네이버페이 결제홈이 열려요"},{"id":"naver-click","title":"네이버페이 즉시적립","sourceId":"naver","sourceLabel":"네이버","status":"manual","daily":true,"benefit":"즉시적립","summary":"즉시적립 화면이 바로 열려요. 배너를 누르면 포인트가 바로 들어와요.","meta":"매일 · 배너 클릭","deeplink":"naversearchapp://inappbrowser?url=https%3A%2F%2Fpoint.pay.naver.com%2Fmain%3Fcategory%3Dquickreward&target=new&version=6","web":"https://point.pay.naver.com/main?category=quickreward","hint":"네이버앱 인앱브라우저로 즉시적립 화면이 열려요"},{"id":"toss-walk","title":"토스 만보기 5,000보","sourceId":"toss","sourceLabel":"토스","status":"manual","daily":true,"benefit":"만보기 포인트","summary":"5,000보를 채우면 포인트가 들어와요. 걸음 수는 매일 자정에 새로 시작해요.","meta":"매일 · 토스 앱에서 걸음 확인","deeplink":"https://toss.im/_m/zahEn9jc","web":"https://toss.im/_m/zahEn9jc","hint":"토스 앱 만보기 화면으로 바로 열려요"},{"id":"kakaopay-attend","title":"카카오페이 출석체크","sourceId":"kakaopay","sourceLabel":"카카오페이","status":"manual","daily":true,"benefit":"출석 포인트","summary":"하루 한 번 출석 도장을 찍으면 포인트가 쌓여요.","meta":"매일 · 출석 도장","deeplink":"https://link.kakaopay.com/_/plUyuPn","web":"https://link.kakaopay.com/_/plUyuPn","hint":"카카오페이 앱 출석체크 화면으로 바로 열려요"},{"id":"coupang-goldbox","title":"쿠팡 골드박스 오늘의 특가","sourceId":"coupang","sourceLabel":"쿠팡","status":"manual","daily":true,"benefit":"오늘의 특가","summary":"골드박스는 매일 새로 열리는 쿠팡 특가 코너예요. 오늘 올라온 상품과 쿠폰을 볼 수 있어요.","meta":"매일 갱신 · 10초","deeplink":"https://www.coupang.com/np/goldbox","web":"https://www.coupang.com/np/goldbox","hint":"쿠팡 앱 골드박스로 바로 열려요"}]}</script>
 <script>
 (function () {
   'use strict';
@@ -456,16 +456,17 @@
   var RING_C = 2 * Math.PI * 18;
 
   var PRESETS = [
-    { id: 'r-toss-walk', title: '토스 만보기', meta: '15초 · 30P · 만보기 화면',
-      deeplink: 'https://toss.im/_m/zahEn9jc', web: 'https://toss.im/_m/zahEn9jc', hint: '토스 앱 만보기 화면으로 바로 열려요', color: '#0064FF', mark: '토' },
-    { id: 'r-toss-quiz', title: '토스 행운퀴즈', meta: '20초 · 최대 100P · 오늘 22:00 마감',
-      deeplink: 'supertoss://toss/benefit', web: 'https://toss.im/benefit', hint: '토스 앱 혜택 화면으로 바로 열려요', color: '#0064FF', mark: '토' },
-    { id: 'r-naver-click', title: '네이버페이 클릭 적립', meta: '10초 · 최대 30P · 하루 3회',
+    { id: 'r-naver-home', title: '네이버페이 결제홈 방문 적립', meta: '매일 · 방문만 해도 적립',
+      deeplink: 'naversearchapp://inappbrowser?url=https%3A%2F%2Fnew-m.pay.naver.com%2Fhistorybenefit%2Fhome&target=new&version=6',
+      web: 'https://new-m.pay.naver.com/historybenefit/home', hint: '네이버앱 인앱브라우저로 네이버페이 결제홈이 열려요', color: '#03C75A', mark: '네' },
+    { id: 'r-naver-click', title: '네이버페이 즉시적립', meta: '매일 · 배너 클릭',
       deeplink: 'naversearchapp://inappbrowser?url=https%3A%2F%2Fpoint.pay.naver.com%2Fmain%3Fcategory%3Dquickreward&target=new&version=6',
       web: 'https://point.pay.naver.com/main?category=quickreward', hint: '네이버앱 인앱브라우저로 즉시적립 화면이 열려요', color: '#03C75A', mark: '네' },
-    { id: 'r-kakaopay', title: '카카오페이 출석체크', meta: '5초 · 연속 4일째 · 7일 채우면 500P',
+    { id: 'r-toss-walk', title: '토스 만보기', meta: '매일 · 만보기 화면에서 걸음 확인',
+      deeplink: 'https://toss.im/_m/zahEn9jc', web: 'https://toss.im/_m/zahEn9jc', hint: '토스 앱 만보기 화면으로 바로 열려요', color: '#0064FF', mark: '토' },
+    { id: 'r-kakaopay', title: '카카오페이 출석체크', meta: '매일 · 출석 도장',
       deeplink: 'https://link.kakaopay.com/_/plUyuPn', web: 'https://link.kakaopay.com/_/plUyuPn', hint: '카카오페이 앱 출석체크 화면으로 바로 열려요', color: '#FFCD00', mark: '카', darkMark: true },
-    { id: 'r-coupang', title: '쿠팡 골드박스 특가', meta: '10초 · 오늘의 특가 확인',
+    { id: 'r-coupang', title: '쿠팡 골드박스 특가', meta: '매일 갱신 · 오늘의 특가 확인',
       deeplink: 'https://www.coupang.com/np/goldbox', web: 'https://www.coupang.com/np/goldbox', hint: '쿠팡 앱 골드박스로 바로 열려요', color: '#E03C31', mark: '쿠' }
   ];
 
@@ -564,7 +565,7 @@
   }
 
   /* ============ 3. 이벤트 데이터 ============ */
-  var DATA = { list: [], origin: 'embedded', updatedAt: '' };
+  var DATA = { list: [], logs: [], origin: 'embedded', updatedAt: '' };
 
   function normalizeEvent(raw) {
     if (!raw || typeof raw !== 'object') return null;
@@ -578,6 +579,7 @@
       sourceId: String(raw.sourceId || ''),
       status: STATUS[raw.status] ? raw.status : 'manual',
       endsInDays: endsIn,
+      daily: !!raw.daily,
       deadline: raw.deadline ? String(raw.deadline) : '',
       benefit: raw.benefit ? String(raw.benefit) : '',
       summary: raw.summary ? String(raw.summary) : '',
@@ -589,10 +591,26 @@
     };
   }
 
+  /* logs 는 꼬물이 실제로 처리한 기록만 담깁니다. 없으면 빈 상태로 보여줍니다. */
+  function normalizeLogs(payload) {
+    var arr = (payload && Array.isArray(payload.logs) ? payload.logs : []);
+    return arr.map(function (l) {
+      if (!l || typeof l !== 'object') return null;
+      var t = String(l.t || l.time || '');
+      var msg = String(l.s || l.text || '');
+      if (!msg) return null;
+      return { t: t, s: msg };
+    }).filter(Boolean);
+  }
+
   function normalizeSet(payload) {
     var list = (payload && Array.isArray(payload.events) ? payload.events : [])
       .map(normalizeEvent).filter(Boolean);
-    return { list: list, updatedAt: payload && payload.updatedAt ? String(payload.updatedAt) : '' };
+    return {
+      list: list,
+      logs: normalizeLogs(payload),
+      updatedAt: payload && payload.updatedAt ? String(payload.updatedAt) : ''
+    };
   }
 
   function readSeed() {
@@ -608,6 +626,7 @@
     var set = normalizeSet(payload);
     if (!set.list.length) return false;
     DATA.list = set.list;
+    DATA.logs = set.logs || [];
     DATA.origin = origin;
     DATA.updatedAt = set.updatedAt;
     return true;
@@ -657,6 +676,7 @@
   }
 
   function ddayLabel(e) {
+    if (e.daily) return '매일';
     var n = daysLeft(e);
     if (n < 0) return '마감';
     if (n === 0) return 'D-DAY';
@@ -672,7 +692,10 @@
     return '기간 미정';
   }
 
-  function isUrgent(e) { return daysLeft(e) <= 2 && !state.eventsDone[e.id]; }
+  function isUrgent(e) {
+    if (e.daily) return false; /* 매일 반복 항목은 마감 임박이 아님 */
+    return daysLeft(e) <= 2 && !state.eventsDone[e.id];
+  }
 
   function filteredEvents() {
     var list = events().slice().sort(function (a, b) {
@@ -799,7 +822,8 @@
       '<li class="card event" data-event="' + esc(e.id) + '">' +
         '<div class="event-top">' +
           '<span class="src"><i style="--c:' + esc(color) + '"></i>' + esc(e.source) + '</span>' +
-          '<span class="dday' + (n <= 1 ? ' hot' : '') + '">' + esc(ddayLabel(e)) + ' · ' + esc(deadlineText(e)) + '</span>' +
+          '<span class="dday' + (!e.daily && n <= 1 ? ' hot' : '') + '">' +
+            esc(e.daily ? '매일' : ddayLabel(e) + ' · ' + deadlineText(e)) + '</span>' +
           '<span class="status ' + st.cls + '">' + st.label + '</span>' +
           (done ? '<span class="status done">참여 완료</span>' : '') +
         '</div>' +
@@ -859,17 +883,12 @@
         '</li>';
     }).join('');
 
-    var auto = autoCount();
-    var logs = [
-      { t: '오늘 08:12', s: '메일함을 훑어 이벤트 ' + events().length + '건을 목록에 올렸어요.' },
-      { t: '오늘 08:12', s: '그중 ' + auto + '건은 제가 먼저 확인했거나 대신 응모했어요.' },
-      { t: '오늘 08:12', s: '현대카드 캐시백은 응모 버튼이 필요해서 알려드렸어요.' },
-      { t: '어제 21:00', s: '토스 행운퀴즈가 오늘 22:00 마감이라고 미리 알려드렸어요.' },
-      { t: '11/13 19:40', s: '배민 쿠폰을 계정 쿠폰함에 담아뒀어요.' }
-    ];
-    $('#logList').innerHTML = logs.map(function (l) {
-      return '<li class="log"><time>' + esc(l.t) + '</time><p>' + esc(l.s) + '</p></li>';
-    }).join('');
+    var logs = DATA.logs;
+    $('#logList').innerHTML = logs.length
+      ? logs.map(function (l) {
+          return '<li class="log"><time>' + esc(l.t) + '</time><p>' + esc(l.s) + '</p></li>';
+        }).join('')
+      : '<li><p class="empty">아직 자동 처리한 내역이 없어요.<br>제가 실제로 처리한 일이 생기면 여기에 하나씩 남겨둘게요.</p></li>';
 
     renderAsks();
   }
@@ -1073,7 +1092,7 @@
     state.hidden = {};
     save();
     renderAll();
-    toast('기본 루틴 5개를 다시 넣었어요');
+    toast('기본 루틴 ' + PRESETS.length + '개를 다시 넣었어요');
   }
 
   function toggleEvent(id) {
