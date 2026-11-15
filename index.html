@@ -949,11 +949,18 @@
     return /^https?:\/\//i.test(String(url || ''));
   }
 
-  /* http(s) 주소는 새 탭(앵커 target=_blank)으로 열어야 아이폰 홈 화면에 추가한 PWA가
+  /* http(s) 주소는 새 창(새 탭)으로 열어야 아이폰 홈 화면에 추가한 PWA가
      유니버설 링크로 진짜 앱(토스·카카오페이·쿠팡·네이버)에 넘겨 줍니다.
      같은 탭 이동(location.href)은 PWA 화면 안에 머물러 앱 첫 화면만 뜨던 원인이었습니다. */
   function openExternal(url) {
     if (!url) return false;
+    var w = null;
+    try { w = window.open(url, '_blank'); } catch (e) { w = null; }
+    if (w) {
+      try { w.opener = null; } catch (e) { /* 무시 */ }
+      return true;
+    }
+    /* 팝업이 막힌 경우: 앵커 탭(맴버 클릭과 같은 경로)으로 다시 시도 */
     var a = document.createElement('a');
     a.href = url;
     a.target = '_blank';
@@ -966,8 +973,7 @@
       a.click();
     } catch (e) { ok = false; }
     setTimeout(function () { try { a.parentNode && a.parentNode.removeChild(a); } catch (e) { /* 무시 */ } }, 1000);
-    if (ok) return true;
-    try { return !!window.open(url, '_blank', 'noopener,noreferrer'); } catch (e) { return false; }
+    return ok;
   }
 
   function openWeb(url) {
