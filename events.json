@@ -1,7 +1,7 @@
 {
   "version": 3,
-  "updatedAt": "2026-11-15T13:53:05+09:00",
-  "source": "꼬물이 화면에 직접 열어 확인한 5개 · 시연용 예시 데이터는 11/15에 모두 삭제",
+  "updatedAt": "2026-11-17T08:01:49+09:00",
+  "source": "꼬물이 11/17 화면에서 직접 열어 확인한 8개(네이버 로그인 상태) · 11/17 신규 3개: 럭키볼·금융보험 클릭·스토어 알림",
   "note": "daily:true 는 매일 반복되는 항목이라 마감일이 없다는 뜻입니다. 실제 마감이 확인된 항목만 deadline(YYYY-MM-DD)을 채웁니다. logs 는 꼬물이 실제로 처리한 일이 있을 때만 쌓입니다.",
   "logs": [],
   "events": [
@@ -74,6 +74,49 @@
       "deeplink": "https://www.coupang.com/np/goldbox",
       "web": "https://www.coupang.com/np/goldbox",
       "hint": "쿠팡 앱 골드박스로 바로 열려요"
+    },
+    {
+      "id": "naver-luckyball",
+      "title": "네이버페이 럭키볼 뽑기",
+      "sourceId": "naver",
+      "sourceLabel": "네이버",
+      "status": "manual",
+      "daily": true,
+      "deadline": "2026-12-31",
+      "benefit": "1~10원 즉시 · 1등 100만원",
+      "summary": "매일 럭키볼이 1개씩 쌓여요. 뽑으면 1~10원이 바로 들어오고, 1등은 100만원이에요. 참여하려면 알림 동의가 필요해요.",
+      "meta": "매일 12시 초기화 · 12/31까지",
+      "deeplink": "https://campaign2.naver.com/npay/luckyball/?from=pointtab",
+      "web": "https://campaign2.naver.com/npay/luckyball/?from=pointtab",
+      "hint": "럭키볼 뽑기·당첨 확인은 Npay 앱에서 해요"
+    },
+    {
+      "id": "naver-finance-click",
+      "title": "네이버페이 금융·보험 클릭 15원",
+      "sourceId": "naver",
+      "sourceLabel": "네이버",
+      "status": "manual",
+      "daily": true,
+      "benefit": "클릭당 15원",
+      "summary": "금융·보험 혜택 목록이 한 화면에 열려요. 항목을 누르면 15원(일부 2원)이 바로 적립되고 매일 새로 열려요.",
+      "meta": "매일 · 항목마다 15원",
+      "deeplink": "https://point.pay.naver.com/pc/mission-detail?dataType=category&pageKey=insurance&mssCode=insurance",
+      "web": "https://point.pay.naver.com/pc/mission-detail?dataType=category&pageKey=insurance&mssCode=insurance",
+      "hint": "네이버페이 포인트 미션 상세가 열려요"
+    },
+    {
+      "id": "naver-store-alarm",
+      "title": "네이버페이 스토어 알림 100원",
+      "sourceId": "naver",
+      "sourceLabel": "네이버",
+      "status": "manual",
+      "daily": true,
+      "benefit": "즉시 100원",
+      "summary": "브랜드스토어 알림을 추가하면 100원이 바로 들어와요. 11/17 오늘은 종근당 브랜드스토어 미션이 열려 있어요.",
+      "meta": "스토어 알림 추가 · 즉시 100원",
+      "deeplink": "https://point.pay.naver.com/pc/mission-detail?dataType=placement&pageKey=benefit_group_alarm&mssCode=alarm",
+      "web": "https://point.pay.naver.com/pc/mission-detail?dataType=placement&pageKey=benefit_group_alarm&mssCode=alarm",
+      "hint": "네이버페이 포인트 미션 상세가 열려요"
     }
   ]
 }
