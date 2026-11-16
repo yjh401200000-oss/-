@@ -402,11 +402,11 @@
         <span class="ico"><svg><use href="#i-phone"/></svg></span>
         <div>
           <h3>아이폰 홈 화면에 추가</h3>
-          <p>사파리에서 이 파일을 열고 <b>공유 → 홈 화면에 추가</b>를 누르면 앱 아이콘처럼 열려요. 매일 아침 알림까지 받으려면 웹에 올린 뒤 홈 화면에 추가하면 돼요.</p>
+          <p>사파리에서 이 주소를 열고 <b>공유 → 홈 화면에 추가</b>를 누르면 앱 아이콘처럼 열려요. 새 혜택·마감 소식은 꼬물 채팅으로 받아요.</p>
         </div>
       </div>
 
-      <button class="reset" data-action="reset" id="resetBtn">프로토타입 데이터 초기화</button>
+      <button class="reset" data-action="reset" id="resetBtn">내 체크·설정 처음으로</button>
     </section>
   </main>
 
@@ -446,7 +446,7 @@
   </div>
 </div>
 
-<script id="seed-events" type="application/json">{"version":3,"updatedAt":"2026-11-17T08:01:49+09:00","source":"꼬물이 11/17 화면에서 직접 열어 확인한 8개(네이버 로그인 상태) · 11/17 신규 3개: 럭키볼·금융보험 클릭·스토어 알림","note":"daily:true 는 매일 반복되는 항목이라 마감일이 없다는 뜻입니다. 실제 마감이 확인된 항목만 deadline(YYYY-MM-DD)을 채웁니다. logs 는 꼬물이 실제로 처리한 일이 있을 때만 쌓입니다.","logs":[],"events":[{"id":"naver-pay-home","title":"네이버페이 결제홈 방문 적립","sourceId":"naver","sourceLabel":"네이버","status":"manual","daily":true,"benefit":"방문 적립","summary":"네이버페이 결제홈에 들어가기만 해도 적립 혜택을 받을 수 있어요. 하루 한 번이면 돼요.","meta":"매일 · 방문만 해도 적립","deeplink":"naversearchapp://inappbrowser?url=https%3A%2F%2Fnew-m.pay.naver.com%2Fhistorybenefit%2Fhome&target=new&version=6","web":"https://new-m.pay.naver.com/historybenefit/home","hint":"네이버앱 인앱브라우저로 네이버페이 결제홈이 열려요"},{"id":"naver-click","title":"네이버페이 즉시적립","sourceId":"naver","sourceLabel":"네이버","status":"manual","daily":true,"benefit":"즉시적립","summary":"즉시적립 화면이 바로 열려요. 배너를 누르면 포인트가 바로 들어와요.","meta":"매일 · 배너 클릭","deeplink":"naversearchapp://inappbrowser?url=https%3A%2F%2Fpoint.pay.naver.com%2Fmain%3Fcategory%3Dquickreward&target=new&version=6","web":"https://point.pay.naver.com/main?category=quickreward","hint":"네이버앱 인앱브라우저로 즉시적립 화면이 열려요"},{"id":"toss-walk","title":"토스 만보기 5,000보","sourceId":"toss","sourceLabel":"토스","status":"manual","daily":true,"benefit":"만보기 포인트","summary":"5,000보를 채우면 포인트가 들어와요. 걸음 수는 매일 자정에 새로 시작해요.","meta":"매일 · 토스 앱에서 걸음 확인","deeplink":"https://toss.im/_m/zahEn9jc","web":"https://toss.im/_m/zahEn9jc","hint":"토스 앱 만보기 화면으로 바로 열려요"},{"id":"kakaopay-attend","title":"카카오페이 출석체크","sourceId":"kakaopay","sourceLabel":"카카오페이","status":"manual","daily":true,"benefit":"출석 포인트","summary":"하루 한 번 출석 도장을 찍으면 포인트가 쌓여요.","meta":"매일 · 출석 도장","deeplink":"https://link.kakaopay.com/_/plUyuPn","web":"https://link.kakaopay.com/_/plUyuPn","hint":"카카오페이 앱 출석체크 화면으로 바로 열려요"},{"id":"coupang-goldbox","title":"쿠팡 골드박스 오늘의 특가","sourceId":"coupang","sourceLabel":"쿠팡","status":"manual","daily":true,"benefit":"오늘의 특가","summary":"골드박스는 매일 새로 열리는 쿠팡 특가 코너예요. 오늘 올라온 상품과 쿠폰을 볼 수 있어요.","meta":"매일 갱신 · 10초","deeplink":"https://www.coupang.com/np/goldbox","web":"https://www.coupang.com/np/goldbox","hint":"쿠팡 앱 골드박스로 바로 열려요"},{"id":"naver-luckyball","title":"네이버페이 럭키볼 뽑기","sourceId":"naver","sourceLabel":"네이버","status":"manual","daily":true,"deadline":"2026-12-31","benefit":"1~10원 즉시 · 1등 100만원","summary":"매일 럭키볼이 1개씩 쌓여요. 뽑으면 1~10원이 바로 들어오고, 1등은 100만원이에요. 참여하려면 알림 동의가 필요해요.","meta":"매일 12시 초기화 · 12/31까지","deeplink":"https://campaign2.naver.com/npay/luckyball/?from=pointtab","web":"https://campaign2.naver.com/npay/luckyball/?from=pointtab","hint":"럭키볼 뽑기·당첨 확인은 Npay 앱에서 해요"},{"id":"naver-finance-click","title":"네이버페이 금융·보험 클릭 15원","sourceId":"naver","sourceLabel":"네이버","status":"manual","daily":true,"benefit":"클릭당 15원","summary":"금융·보험 혜택 목록이 한 화면에 열려요. 항목을 누르면 15원(일부 2원)이 바로 적립되고 매일 새로 열려요.","meta":"매일 · 항목마다 15원","deeplink":"https://point.pay.naver.com/pc/mission-detail?dataType=category&pageKey=insurance&mssCode=insurance","web":"https://point.pay.naver.com/pc/mission-detail?dataType=category&pageKey=insurance&mssCode=insurance","hint":"네이버페이 포인트 미션 상세가 열려요"},{"id":"naver-store-alarm","title":"네이버페이 스토어 알림 100원","sourceId":"naver","sourceLabel":"네이버","status":"manual","daily":true,"benefit":"즉시 100원","summary":"브랜드스토어 알림을 추가하면 100원이 바로 들어와요. 11/17 오늘은 종근당 브랜드스토어 미션이 열려 있어요.","meta":"스토어 알림 추가 · 즉시 100원","deeplink":"https://point.pay.naver.com/pc/mission-detail?dataType=placement&pageKey=benefit_group_alarm&mssCode=alarm","web":"https://point.pay.naver.com/pc/mission-detail?dataType=placement&pageKey=benefit_group_alarm&mssCode=alarm","hint":"네이버페이 포인트 미션 상세가 열려요"}]}</script>
+<script id="seed-events" type="application/json">{"version":3,"updatedAt":"2026-11-17T08:15:23+09:00","source":"꼬물이 11/17 화면에서 직접 열어 확인한 8개(네이버 로그인 상태) · 11/17 신규 3개: 럭키볼·금융보험 클릭·스토어 알림","note":"daily:true 는 매일 반복되는 항목이라 마감일이 없다는 뜻입니다. 실제 마감이 확인된 항목만 deadline(YYYY-MM-DD)을 채웁니다. logs 는 꼬물이 실제로 처리한 일이 있을 때만 쌓입니다.","logs":[{"t":"11/17 08:13","s":"네이버페이 웹 클릭 적립 대신 눌러보기 시도 — 보험·페이 홈 미션 3건 모두 네이버가 '잘못된 접근'으로 막아 0원(잔액 880원 그대로), 앱에서만 참여 가능"},{"t":"11/17 08:01","s":"네이버 메일·웹 점검 완료 — 럭키볼·금융보험 클릭·스토어 알림 3건 검증 후 추가"}],"events":[{"id":"naver-pay-home","title":"네이버페이 결제홈 방문 적립","sourceId":"naver","sourceLabel":"네이버","status":"manual","daily":true,"benefit":"방문 적립","summary":"네이버페이 결제홈에 들어가기만 해도 적립 혜택을 받을 수 있어요. 하루 한 번이면 돼요.","meta":"매일 · 방문만 해도 적립","deeplink":"naversearchapp://inappbrowser?url=https%3A%2F%2Fnew-m.pay.naver.com%2Fhistorybenefit%2Fhome&target=new&version=6","web":"https://new-m.pay.naver.com/historybenefit/home","hint":"네이버앱 인앱브라우저로 네이버페이 결제홈이 열려요"},{"id":"naver-click","title":"네이버페이 즉시적립","sourceId":"naver","sourceLabel":"네이버","status":"manual","daily":true,"benefit":"즉시적립","summary":"즉시적립 화면이 바로 열려요. 배너를 누르면 포인트가 바로 들어와요.","meta":"매일 · 배너 클릭","deeplink":"naversearchapp://inappbrowser?url=https%3A%2F%2Fpoint.pay.naver.com%2Fmain%3Fcategory%3Dquickreward&target=new&version=6","web":"https://point.pay.naver.com/main?category=quickreward","hint":"네이버앱 인앱브라우저로 즉시적립 화면이 열려요"},{"id":"toss-walk","title":"토스 만보기 5,000보","sourceId":"toss","sourceLabel":"토스","status":"manual","daily":true,"benefit":"만보기 포인트","summary":"5,000보를 채우면 포인트가 들어와요. 걸음 수는 매일 자정에 새로 시작해요.","meta":"매일 · 토스 앱에서 걸음 확인","deeplink":"https://toss.im/_m/zahEn9jc","web":"https://toss.im/_m/zahEn9jc","hint":"토스 앱 만보기 화면으로 바로 열려요"},{"id":"kakaopay-attend","title":"카카오페이 출석체크","sourceId":"kakaopay","sourceLabel":"카카오페이","status":"manual","daily":true,"benefit":"출석 포인트","summary":"하루 한 번 출석 도장을 찍으면 포인트가 쌓여요.","meta":"매일 · 출석 도장","deeplink":"https://link.kakaopay.com/_/plUyuPn","web":"https://link.kakaopay.com/_/plUyuPn","hint":"카카오페이 앱 출석체크 화면으로 바로 열려요"},{"id":"coupang-goldbox","title":"쿠팡 골드박스 오늘의 특가","sourceId":"coupang","sourceLabel":"쿠팡","status":"manual","daily":true,"benefit":"오늘의 특가","summary":"골드박스는 매일 새로 열리는 쿠팡 특가 코너예요. 오늘 올라온 상품과 쿠폰을 볼 수 있어요.","meta":"매일 갱신 · 10초","deeplink":"https://www.coupang.com/np/goldbox","web":"https://www.coupang.com/np/goldbox","hint":"쿠팡 앱 골드박스로 바로 열려요"},{"id":"naver-luckyball","title":"네이버페이 럭키볼 뽑기","sourceId":"naver","sourceLabel":"네이버","status":"manual","daily":true,"deadline":"2026-12-31","benefit":"1~10원 즉시 · 1등 100만원","summary":"매일 럭키볼이 1개씩 쌓여요. 뽑으면 1~10원이 바로 들어오고, 1등은 100만원이에요. 참여하려면 알림 동의가 필요해요.","meta":"매일 12시 초기화 · 12/31까지","deeplink":"https://campaign2.naver.com/npay/luckyball/?from=pointtab","web":"https://campaign2.naver.com/npay/luckyball/?from=pointtab","hint":"럭키볼 뽑기·당첨 확인은 Npay 앱에서 해요"},{"id":"naver-finance-click","title":"네이버페이 금융·보험 클릭 15원","sourceId":"naver","sourceLabel":"네이버","status":"manual","daily":true,"benefit":"클릭당 15원","summary":"금융·보험 혜택 목록이 한 화면에 열려요. 항목을 누르면 15원(일부 2원)이 바로 적립되고 매일 새로 열려요.","meta":"매일 · 항목마다 15원","deeplink":"https://point.pay.naver.com/pc/mission-detail?dataType=category&pageKey=insurance&mssCode=insurance","web":"https://point.pay.naver.com/pc/mission-detail?dataType=category&pageKey=insurance&mssCode=insurance","hint":"네이버페이 포인트 미션 상세가 열려요"},{"id":"naver-store-alarm","title":"네이버페이 스토어 알림 100원","sourceId":"naver","sourceLabel":"네이버","status":"manual","daily":true,"benefit":"즉시 100원","summary":"브랜드스토어 알림을 추가하면 100원이 바로 들어와요. 11/17 오늘은 종근당 브랜드스토어 미션이 열려 있어요.","meta":"스토어 알림 추가 · 즉시 100원","deeplink":"https://point.pay.naver.com/pc/mission-detail?dataType=placement&pageKey=benefit_group_alarm&mssCode=alarm","web":"https://point.pay.naver.com/pc/mission-detail?dataType=placement&pageKey=benefit_group_alarm&mssCode=alarm","hint":"네이버페이 포인트 미션 상세가 열려요"}]}</script>
 <script>
 (function () {
   'use strict';
@@ -471,18 +471,14 @@
   ];
 
   var RULES = [
-    { id: 'mailScan', icon: 'i-mail', title: '메일함 이벤트·포인트 소멸 스캔', on: true,
-      desc: '매일 08:00 네이버 메일을 훑어 이벤트·청구·소멸 예정 포인트를 뽑아옵니다.' },
-    { id: 'autoEntry', icon: 'i-bolt', title: '웹 응모형 이벤트 대리 응모', on: true,
-      desc: '개인정보 입력이 없는 공개 폼만 대신 응모합니다. 결제나 본인인증이 필요한 건 알려만 드립니다.' },
-    { id: 'd1Alert', icon: 'i-bell', title: '마감 D-1 알림', on: true,
-      desc: '내일 끝나는 이벤트를 아침에 한 번, 저녁에 한 번 알려드립니다.' },
-    { id: 'cardCashback', icon: 'i-card', title: '카드사 캐시백 응모 확인', on: true,
-      desc: '카드사 메일에서 응모가 필요한 캐시백을 찾아 목록에 올립니다.' },
-    { id: 'expireTrack', icon: 'i-clock', title: '포인트 소멸 추적', on: true,
-      desc: '소멸 30일 전과 7일 전에 미리 알려드립니다.' },
-    { id: 'weekendDeal', icon: 'i-tag', title: '주말 특가·쿠폰 정리', on: false,
-      desc: '금요일 저녁에 주말 한정 쿠폰을 모아 둡니다.' }
+    { id: 'feedSync', icon: 'i-spark', title: '이벤트 피드 자동 갱신', on: true,
+      desc: '매일 08:00·12:00·16:00·20:00에 진행 중인 포인트·이벤트 링크를 확인해 올리고, 마감된 건은 자동으로 내립니다.' },
+    { id: 'mailScan', icon: 'i-mail', title: '네이버 메일 혜택·소멸 스캔', on: true,
+      desc: '네이버 메일(받은편지함·프로모션)에서 쿠폰, 카드사 캐시백 응모, 포인트 소멸 안내를 찾아 정리합니다.' },
+    { id: 'd1Alert', icon: 'i-bell', title: '마감 임박·중요 혜택 알림', on: true,
+      desc: '소멸 예정 포인트나 마감이 임박한 중요 혜택은 채팅으로 바로 알려드립니다.' },
+    { id: 'naverWebClaim', icon: 'i-bolt', title: '네이버페이 웹 클릭 적립 대리 수령', on: false,
+      desc: '네이버 로그인은 저장돼 있지만, 클릭형 포인트 미션은 웹에서 열면 네이버가 “잘못된 접근”으로 막아요. 앱 안에서만 적립되는 미션입니다.' }
   ];
 
   var SRC_COLOR = {
@@ -862,7 +858,7 @@
       if (!isNaN(d.getTime())) stamp = ' · ' + (d.getMonth() + 1) + '/' + d.getDate() + ' ' + pad2(d.getHours()) + ':' + pad2(d.getMinutes()) + ' 갱신';
     }
     $('#srcNote').innerHTML = '이벤트 ' + total + '건 · <b>' + esc(origin) + '</b>' + esc(stamp) +
-      '<br>프로토타입 화면이라 자동 수집은 꼬물과 연결된 뒤 실제로 동작해요.';
+      '<br>매일 08·12·16·20시에 제가 메일·웹을 확인해 자동으로 갱신하고, 마감된 건은 내려요.';
 
     renderChips();
   }
@@ -1200,14 +1196,14 @@
       resetTimer = setTimeout(function () {
         resetArmed = false;
         btn.classList.remove('armed');
-        btn.textContent = '프로토타입 데이터 초기화';
+        btn.textContent = '내 체크·설정 처음으로';
       }, 4000);
       return;
     }
     resetArmed = false;
     if (resetTimer) clearTimeout(resetTimer);
     btn.classList.remove('armed');
-    btn.textContent = '프로토타입 데이터 초기화';
+    btn.textContent = '내 체크·설정 처음으로';
     try { localStorage.removeItem(STORE_KEY); } catch (e) {}
     state = defaultState();
     editing = false;
