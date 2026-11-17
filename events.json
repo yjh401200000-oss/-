@@ -1,9 +1,13 @@
 {
   "version": 3,
-  "updatedAt": "2026-11-17T12:05:00+09:00",
-  "source": "꼬물이 직접 열어 확인한 8개(네이버·토스 앱 링크) · 11/17 12시 점검 신규 0건",
+  "updatedAt": "2026-11-17T16:04:28+09:00",
+  "source": "꼬물이 직접 열어 확인한 9개(네이버·토스 앱 링크) · 11/17 16시 신규 1건",
   "note": "daily:true 는 매일 반복되는 항목이라 마감일이 없다는 뜻입니다. 실제 마감이 확인된 항목만 deadline(YYYY-MM-DD)을 채웁니다. logs 는 꼬물이 실제로 처리한 일이 있을 때만 쌓입니다.",
   "logs": [
+    {
+      "t": "11/17 16:04",
+      "s": "16시 점검 완료 — 메일 신규 0건(프로모션 2건은 구직·광고), 브랜드뽑기 1건 추가(이벤트 페이지 직접 확인: 컬리·예스24·요기요·크림, 매일 14시 오픈), 만료 0건"
+    },
     {
       "t": "11/17 12:05",
       "s": "12시 점검 완료 — 신규 0건·만료 0건(8개 유지). 토스 벼 수확·네이버 페이펫은 앱 전용·웹 미표시라 검증 못 해 제외, 스토어 알림 문구의 날짜 고정 표현만 정리"
@@ -130,6 +134,20 @@
       "deeplink": "https://point.pay.naver.com/pc/mission-detail?dataType=placement&pageKey=benefit_group_alarm&mssCode=alarm",
       "web": "https://point.pay.naver.com/pc/mission-detail?dataType=placement&pageKey=benefit_group_alarm&mssCode=alarm",
       "hint": "네이버페이 포인트 미션 상세가 열려요"
+    },
+    {
+      "id": "naver-brand-draw",
+      "title": "네이버페이 브랜드뽑기 100% 적립",
+      "sourceId": "naver",
+      "sourceLabel": "네이버",
+      "status": "manual",
+      "daily": true,
+      "benefit": "최대 100% 적립",
+      "summary": "매일 오후 2시에 브랜드가 열려요. 원하는 브랜드를 뽑고 그 브랜드에서 네이버페이로 결제하면 결제액의 최대 100%를 포인트로 돌려받아요. 오늘(11/17)은 컬리·예스24·요기요·크림이 열렸고 선착순이 끝나면 보너스 뽑기로 참여할 수 있어요.",
+      "meta": "매일 14시 오픈 · 1일 1브랜드",
+      "deeplink": "https://campaign2.naver.com/npay/branddraw",
+      "web": "https://campaign2.naver.com/npay/branddraw",
+      "hint": "네이버페이 브랜드뽑기 이벤트 페이지가 열려요"
     }
   ]
 }
