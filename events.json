@@ -1,9 +1,13 @@
 {
   "version": 3,
-  "updatedAt": "2026-11-17T08:15:23+09:00",
-  "source": "꼬물이 11/17 화면에서 직접 열어 확인한 8개(네이버 로그인 상태) · 11/17 신규 3개: 럭키볼·금융보험 클릭·스토어 알림",
+  "updatedAt": "2026-11-17T12:05:00+09:00",
+  "source": "꼬물이 직접 열어 확인한 8개(네이버·토스 앱 링크) · 11/17 12시 점검 신규 0건",
   "note": "daily:true 는 매일 반복되는 항목이라 마감일이 없다는 뜻입니다. 실제 마감이 확인된 항목만 deadline(YYYY-MM-DD)을 채웁니다. logs 는 꼬물이 실제로 처리한 일이 있을 때만 쌓입니다.",
   "logs": [
+    {
+      "t": "11/17 12:05",
+      "s": "12시 점검 완료 — 신규 0건·만료 0건(8개 유지). 토스 벼 수확·네이버 페이펫은 앱 전용·웹 미표시라 검증 못 해 제외, 스토어 알림 문구의 날짜 고정 표현만 정리"
+    },
     {
       "t": "11/17 08:13",
       "s": "네이버페이 웹 클릭 적립 대신 눌러보기 시도 — 보험·페이 홈 미션 3건 모두 네이버가 '잘못된 접근'으로 막아 0원(잔액 880원 그대로), 앱에서만 참여 가능"
@@ -121,7 +125,7 @@
       "status": "manual",
       "daily": true,
       "benefit": "즉시 100원",
-      "summary": "브랜드스토어 알림을 추가하면 100원이 바로 들어와요. 11/17 오늘은 종근당 브랜드스토어 미션이 열려 있어요.",
+      "summary": "브랜드스토어 알림을 추가하면 100원이 바로 들어와요. 그날 열린 브랜드스토어 미션을 확인해 보세요.",
       "meta": "스토어 알림 추가 · 즉시 100원",
       "deeplink": "https://point.pay.naver.com/pc/mission-detail?dataType=placement&pageKey=benefit_group_alarm&mssCode=alarm",
       "web": "https://point.pay.naver.com/pc/mission-detail?dataType=placement&pageKey=benefit_group_alarm&mssCode=alarm",
